@@ -145,3 +145,14 @@ head: [
     7. name: 결과 확인을 위한 이름
 
     8. cache: 빠른 학습을 위한 이미지 캐시 사용
+### 학습 코드 
+  1. 주의 할점은 역시 : 폴더 경로
+  2. ./dataSet/data.yaml 부분만 수정하면 됩니다.
+  3. 참고로 yolov5s.yaml 보다 성능 좋은 모델을 원하면 5m 5l 5x를 사용해도 됩니다.
+```
+python train.py --img 416 --batch 16 --epochs 100 --data ./dataSet/data.yaml --cfg ./models/custom_yolov5s.yaml --weights '' --name _result --cache
+```
+### 학습이 완료 되면 
+  1. best.pt를 bccdModel.pt라는 이름으로 어딘가에 저장해 두고
+  2. 향후 Inference나 Application을 만들때 사용합니다.
+### 끝
