@@ -1,0 +1,5 @@
+train: D:/hdh2024/BCCD/yolov5/dataSet/train/images
+val: D:/hdh2024/BCCD/yolov5/dataSet/valid/images
+
+nc: 3
+names: ['Platelets', 'RBC', 'WBC']
