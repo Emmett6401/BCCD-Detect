@@ -34,17 +34,26 @@ YoloV5
   1. 폴더를 만듭니다. :D:\hdh2024\BCCD
   2. VSCODE를 실행
   3. 터미널을 열고
-  4. conda create -n yolov5 python=3.9
-  5. VSCODE와 연결 하고
-  6. 새 터미널을 엽니다. : (yolov5) D:\hdh2024\BCCD
-  7. git clone으로 yolov5를 내려 받습니다.
+  4. 가상환경을 만듭니다.
 ```
+
+conda create -n yolov5 python=3.9
+
+```
+  6. VSCODE와 연결 하고
+  7. 새 터미널을 엽니다. : (yolov5) D:\hdh2024\BCCD
+  8. git clone으로 yolov5를 내려 받습니다.
+```
+
 git clone https://github.com/ultralytics/yolov5
+
 ``` 
   9. 'yolov5' Folder로 이동합니다. 
   10. 개발 환경에 필요한 Package를 설치
 ```
+
 pip install -r requirements.txt
+
 ```
 
 ## 2. 데이터세트 준비 과정   
@@ -153,7 +162,9 @@ head: [
   2. ./dataSet/data.yaml 부분만 수정하면 됩니다.
   3. 참고로 yolov5s.yaml 보다 성능 좋은 모델을 원하면 5m 5l 5x를 사용해도 됩니다.
 ```
+
 python train.py --img 416 --batch 16 --epochs 100 --data ./dataSet/data.yaml --cfg ./models/custom_yolov5s.yaml --weights '' --name _result --cache
+
 ```
 ### 학습이 완료 되면 
   1. best.pt를 bccdModel.pt라는 이름으로 어딘가에 저장해 두고
