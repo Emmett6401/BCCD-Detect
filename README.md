@@ -42,7 +42,10 @@ YoloV5
 git clone https://github.com/ultralytics/yolov5
 ``` 
   9. 'yolov5' Folder로 이동합니다. 
-  10. pip install -r requirements.txt
+  10. 개발 환경에 필요한 Package를 설치
+```
+pip install -r requirements.txt
+```
 
 ## 2. 데이터세트 준비 과정   
   10. myGlob.py를 만듭니다. 내용은 colab에 있던 2개의 셀을 복사해오고 폴더 위치만 맞춥니다. 
