@@ -18,6 +18,16 @@ OS 빌드	19045.4291
 ### 모델
 YoloV5
 
-##  
+## 순서
+  1. 폴더를 만듭니다. :D:\hdh2024\BCCD
+  2. VSCODE를 실행
+  3. 터미널을 열고
+  4. conda create -n yolov5 python=3.9
+  5. VSCODE와 연결 하고
+  6. 새 터미널을 엽니다. : (yolov5) D:\hdh2024\BCCD
+  7. git clone으로 yolov5를 내려 받습니다.
+  8. yolov5
+  9. pip install -r requirements.txt
+  10. 
 
 
