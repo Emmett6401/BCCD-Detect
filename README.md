@@ -38,8 +38,11 @@ YoloV5
   5. VSCODE와 연결 하고
   6. 새 터미널을 엽니다. : (yolov5) D:\hdh2024\BCCD
   7. git clone으로 yolov5를 내려 받습니다.
-  8. 'yolov5' Folder로 이동합니다. 
-  9. pip install -r requirements.txt
+```
+git clone https://github.com/ultralytics/yolov5
+``` 
+  9. 'yolov5' Folder로 이동합니다. 
+  10. pip install -r requirements.txt
 
 ## 2. 데이터세트 준비 과정   
   10. myGlob.py를 만듭니다. 내용은 colab에 있던 2개의 셀을 복사해오고 폴더 위치만 맞춥니다. 
