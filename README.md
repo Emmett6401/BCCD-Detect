@@ -1,8 +1,9 @@
 # BCCD-Detect
 혈소판,적혈구,백혈구를 판별
-## Location of dataSet 
+## 1. Location of dataSet 
 https://public.roboflow.com/object-detection/bccd
-## 작업환경 
+
+# 작업환경 
 장치 이름	DESKTOP-O998J3H
 
 프로세서	Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz   3.19 GHz
@@ -27,8 +28,8 @@ OS 빌드	19045.4291
 
 경험	Windows Feature Experience Pack 1000.19056.1000.0
 
-## 모델
-YoloV5
+# 모델
+## YoloV5
 
 ## 1. 모델 가져오고 환경 구축 
   1. 폴더를 만듭니다. :D:\hdh2024\BCCD
@@ -157,6 +158,7 @@ head: [
     7. name: 결과 확인을 위한 이름
 
     8. cache: 빠른 학습을 위한 이미지 캐시 사용
+
 ### 학습 코드 
   1. 주의 할점은 역시 : 폴더 경로
   2. ./dataSet/data.yaml 부분만 수정하면 됩니다.
