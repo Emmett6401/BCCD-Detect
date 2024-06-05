@@ -90,7 +90,7 @@ val: D:/hdh2024/BCCD/yolov5/dataSet/valid/images
 nc: 3
 names: ['Platelets', 'RBC', 'WBC']
 ```
-  13. custom_yolov5s.yaml을 ./models/yolov5s.yaml을 복사해서 사용하고 nc : 80을 nc : 3 으로 수정 (데이터세트의nc를 기준)
+  13. custom_yolov5s.yaml을만들어야 하는데 ./models/yolov5s.yaml을 복사해서 리네임해서 사용하고 nc : 80을 nc : 3 으로 수정 (데이터세트의nc를 기준)
 ```
 # YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
 
