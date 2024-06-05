@@ -3,6 +3,8 @@
 ## 1. Location of dataSet 
 https://public.roboflow.com/object-detection/bccd
 
+데이터세트를 zip으로 다운로드 받아 둡니다. 
+
 # 작업환경 
 장치 이름	DESKTOP-O998J3H
 
@@ -57,8 +59,10 @@ pip install -r requirements.txt
 
 ```
 
-## 2. 데이터세트 준비 과정   
-  10. myGlob.py를 만듭니다. 내용은 colab에 있던 2개의 셀을 복사해오고 폴더 위치만 맞춥니다. 
+## 2. 데이터세트 준비 과정  
+### 앞서 다운로드 받은 데이터세를 d:/hdh2024/bccd/yolov5/dataset폴더에 압축을 풉니다.
+
+  11. myGlob.py를 만듭니다. 내용은 colab에 있던 2개의 셀을 복사해오고 폴더 위치만 맞춥니다. 
 ```
 # 여기서 주의 할것은 데이터셋의 위치를 잘 맞추어 주세요 
 # 실행하는 폴더에 따라서 상대 경로가 달라 지므로 
@@ -78,7 +82,7 @@ if len(train_img_list) > 0 :
     with open('D:/hdh2024/BCCD/yolov5/dataSet/val.txt','w') as f:
         f.write('\n'.join(valid_img_list) + '\n')
 ```
-  11. data.yaml을 수정합니다. : 폴더경로만 수정
+  12. data.yaml을 수정합니다. : 폴더경로만 수정
 ```
 train: D:/hdh2024/BCCD/yolov5/dataSet/train/images
 val: D:/hdh2024/BCCD/yolov5/dataSet/valid/images
@@ -86,7 +90,7 @@ val: D:/hdh2024/BCCD/yolov5/dataSet/valid/images
 nc: 3
 names: ['Platelets', 'RBC', 'WBC']
 ```
-  12. custom_yolov5s.yaml을 ./models/yolov5s.yaml을 복사해서 사용하고 nc : 80을 nc : 3 으로 수정 (데이터세트의nc를 기준)
+  13. custom_yolov5s.yaml을 ./models/yolov5s.yaml을 복사해서 사용하고 nc : 80을 nc : 3 으로 수정 (데이터세트의nc를 기준)
 ```
 # YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
 
